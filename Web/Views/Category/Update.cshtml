@@ -1,0 +1,10 @@
+﻿@using Web.ViewModels.Category
+@model CategoryUpdateVM
+
+<form asp-action="update" asp-controller="category" method="post">
+    <label asp-for="Title">
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+        <button class="btn btn-outline-success" type="submit">Update</button>
+    </label>
+</form>

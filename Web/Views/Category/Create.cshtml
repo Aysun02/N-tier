@@ -1,0 +1,10 @@
+﻿@using Web.ViewModels.Category
+@model CategoryCreateVM
+
+<form asp-action="create" asp-controller="category" method="post">
+    <label asp-for="Title">
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+        <button class="btn btn-outline-primary" type="submit">Create</button>
+    </label>
+</form>
